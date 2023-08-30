@@ -1,6 +1,6 @@
 /** @format */
 
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Public/Footer";
 import Header from "./Components/Public/Header";
@@ -13,14 +13,14 @@ const App = () => {
 	return (
 		<div className="App">
 			<Header />
-			<BrowserRouter>
+			
 				<Routes>
 					<Route path={"/"} element={<Main />} />
 					<Route path="/Main2" element={<Main2 />} />
 					<Route path="/details/:id" element={<Details />} />
 					<Route path="/user-form" element={<UserForm />} />
 				</Routes>
-			</BrowserRouter>
+	
 
 			<section className="container">
 				<Footer />

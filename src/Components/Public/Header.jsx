@@ -1,6 +1,5 @@
 /** @format */
-
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
 	return (
@@ -8,31 +7,29 @@ export default function Header() {
 			<header className="p-3 text-bg-dark">
 				<div className="container">
 					<div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+						<NavLink to={"/"} className="nav-link px-2 text-secondary">
+							<img
+								src="/image/logo.png"
+								width="45"
+								className="rounded-circle"
+								alt="rick"
+							/>
+						</NavLink>
 						<ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
 							<li>
-								<a href="#" className="nav-link px-2 text-secondary">
+								<NavLink to={"/"} className="nav-link px-2 text-secondary">
 									Home
-								</a>
+								</NavLink>
 							</li>
 							<li>
-								<a href="#" className="nav-link px-2 text-white">
-									Features
-								</a>
+								<NavLink to={"/Main2"} className="nav-link px-2 text-white">
+									Planes
+								</NavLink>
 							</li>
 							<li>
-								<a href="#" className="nav-link px-2 text-white">
-									Pricing
-								</a>
-							</li>
-							<li>
-								<a href="#" className="nav-link px-2 text-white">
-									FAQs
-								</a>
-							</li>
-							<li>
-								<a href="#" className="nav-link px-2 text-white">
-									About
-								</a>
+								<NavLink to={"/user-form"} className="nav-link px-2 text-white">
+									Registro
+								</NavLink>
 							</li>
 						</ul>
 

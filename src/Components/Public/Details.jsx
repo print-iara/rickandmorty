@@ -1,12 +1,13 @@
 /** @format */
 
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import RickAndMortyService from "../../Services/RickAndMorty.service";
 
 const Details = () => {
 	const [info, setInfo] = useState({});
 	const { id } = useParams();
+	const { pathname } = useLocation();
 	useEffect(() => {
 		RickAndMortyService.getCharacterById(id).then((data) => {
 			setInfo(data);

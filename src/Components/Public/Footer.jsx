@@ -21,7 +21,11 @@ export default function Footer() {
 					className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
 					onClick={handleClick}
 				>
-					<img className="App-logo" src="/image/koala.jpg" alt="koalita" />
+					<img
+						className="App-logo"
+						src="/image/rick.jpg"
+						alt="Rick and Morty"
+					/>
 				</span>
 
 				<ul className="nav col-md-4 justify-content-end">
